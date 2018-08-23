@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="description" content="description of the website 256characters">
+	<meta name="keywords" content="256characters-keywords via ,">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>HMENU</title>
+	<style>
+		dl, dt, dd, ul, li{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+		
+		.menu1 {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		dl.menu1  {
+			width: 15em;
+		}
+
+		dl.menu1 dt {
+			margin: 2px 0;
+			height: 20px;
+			line-height: 20px;
+			text-align: center;
+			border: 1px solid #000;
+			font-weight: bold;
+			background: cyan;
+		}
+
+		dl.menu1 dd{
+			border: 1px solid red;
+		}
+
+		dl.menu1 li {
+			text-align: center;
+		}
+
+
+
+	</style>
+
+	<script>
+		window.onload=menu1;
+
+
+		function menu1(a) {
+			var d = document.getElementById(a);
+			for (var i = 1; i <= 4; i++) {
+				if (document.getElementById('smenu'+i)) {
+					document.getElementById('smenu'+i).style.display='none';}
+				if (d){d.style.display='block';}
+			}
+		}
+
+	</script>
+</head>
+
+<body>
+<dl class="menu1">
+	<dt onclick="menu1('smenu1')" >MENU1</dt>
+		<dd id="smenu1" onclick="menu1('smenu1')" ><ul>
+			<li><a href="">submenu001</a></li>
+			<li><a href="">submenu002</a></li>
+			<li><a href="">submenu003</a></li>
+			<li><a href="">submenu004</a></li>
+			<li><a href="">submenu005</a></li>
+			<li><a href="">submenu006</a></li>
+		</ul></dd>
+	
+
+
+	
+		<dt onclick="menu1('smenu2')" >MENU2</dt>
+		<dd id="smenu2" onclick="menu1('smenu2')" ><ul>
+			<li><a href="">submenu001</a></li>
+			<li><a href="">submenu002</a></li>
+			<li><a href="">submenu003</a></li>
+			<li><a href="">submenu004</a></li>
+			<li><a href="">submenu005</a></li>
+			<li><a href="">submenu006</a></li>
+		</ul></dd>
+
+
+
+		<dt onclick="menu1('smenu3')" >MENU3</dt>
+		<dd id="smenu3" onclick="menu1('smenu3')" ><ul>
+			<li><a href="">submenu001</a></li>
+			<li><a href="">submenu002</a></li>
+			<li><a href="">submenu003</a></li>
+			<li><a href="">submenu004</a></li>
+			<li><a href="">submenu005</a></li>
+			<li><a href="">submenu006</a></li>
+		</ul></dd>
+
+
+
+		<dt onclick="menu1('smenu4')" >MENU4</dt>
+		<dd id="smenu4" onclick="menu1('smenu4')" ><ul>
+			<li><a href="">submenu001</a></li>
+			<li><a href="">submenu002</a></li>
+			<li><a href="">submenu003</a></li>
+			<li><a href="">submenu004</a></li>
+			<li><a href="">submenu005</a></li>
+			<li><a href="">submenu006</a></li>
+		</ul></dd>
+
+</dl>
+</body>
+
+</html>

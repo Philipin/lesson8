@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="description" content="description of the website 256characters">
+	<meta name="keywords" content="256characters-keywords via ,">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>HMENU</title>
+	<style>
+		dl, dt, dd, ul, li{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		.menu1 dl {
+			float: left;
+			width: 12em;
+			margin: 0 1px;
+		}
+
+		.menu1 dt {
+			text-align: center;
+			border: 1px solid #000;
+			font-weight: bold;
+			background: cyan;
+		}
+
+		.menu1 dd{
+			border: 1px solid red;
+		}
+
+		.menu1 li {
+			text-align: center;
+		}
+
+		.menu1 li a:hover{
+			background-color: black;
+			color:white;
+		}
+
+
+	</style>
+
+	<script>
+		window.onload=menu1;
+
+
+		function menu1(a) {
+			var d = document.getElementById(a);
+			for (var i = 1; i <= 4; i++) {
+				if (document.getElementById('smenu'+i)) {
+					document.getElementById('smenu'+i).style.display='none';}
+				if (d){d.style.display='block';}
+			}
+		}
+
+	</script>
+</head>
+
+<body>
+<div class="menu1">
+	<dl>
+		<dt onmouseover="menu1('smenu1')" onmouseout="menu1()">MENU1</dt>
+		<dd id="smenu1" onmouseover="menu1('smenu1')" onmouseout="menu1()"><ul>
+			<li><a href="">submenu001</a></li>
+			<li><a href="">submenu002</a></li>
+			<li><a href="">submenu003</a></li>
+			<li><a href="">submenu004</a></li>
+			<li><a href="">submenu005</a></li>
+			<li><a href="">submenu006</a></li>
+		</ul></dd>
+	</dl>
+
+
+	<dl>
+		<dt onmouseover="menu1('smenu2')" onmouseout="menu1()">MENU2</dt>
+		<dd id="smenu2" onmouseover="menu1('smenu2')" onmouseout="menu1()"><ul>
+			<li><a href="">submenu001</a></li>
+			<li><a href="">submenu002</a></li>
+			<li><a href="">submenu003</a></li>
+			<li><a href="">submenu004</a></li>
+			<li><a href="">submenu005</a></li>
+			<li><a href="">submenu006</a></li>
+		</ul></dd>
+	</dl>
+
+
+	<dl>
+		<dt onmouseover="menu1('smenu3')" onmouseout="menu1()">MENU3</dt>
+		<dd id="smenu3" onmouseover="menu1('smenu3')" onmouseout="menu1()"><ul>
+			<li><a href="">submenu001</a></li>
+			<li><a href="">submenu002</a></li>
+			<li><a href="">submenu003</a></li>
+			<li><a href="">submenu004</a></li>
+			<li><a href="">submenu005</a></li>
+			<li><a href="">submenu006</a></li>
+		</ul></dd>
+	</dl>
+
+
+	<dl>
+		<dt onmouseover="menu1('smenu4')" onmouseout="menu1()">MENU4</dt>
+		<dd id="smenu4" onmouseover="menu1('smenu4')" onmouseout="menu1()"><ul>
+			<li><a href="">submenu001</a></li>
+			<li><a href="">submenu002</a></li>
+			<li><a href="">submenu003</a></li>
+			<li><a href="">submenu004</a></li>
+			<li><a href="">submenu005</a></li>
+			<li><a href="">submenu006</a></li>
+		</ul></dd>
+	</dl>
+</div>
+</body>
+
+</html>
